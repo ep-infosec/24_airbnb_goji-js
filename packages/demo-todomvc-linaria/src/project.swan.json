@@ -1,0 +1,14 @@
+{
+  "appid": "17767960",
+  "compilation-args": {
+    "common": {
+      "enhance": true,
+      "ignoreTransJs": true
+    }
+  },
+  "host": "baiduboxapp",
+  "projectname": "test",
+  "setting": {
+    "urlCheck": false
+  }
+}

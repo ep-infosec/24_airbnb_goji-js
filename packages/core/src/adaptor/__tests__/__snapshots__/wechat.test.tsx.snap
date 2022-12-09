@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`WeChatAdaptor works with Page 1`] = `
+Object {
+  "meta": Object {
+    "children": Array [
+      Object {
+        "children": Array [],
+        "gojiId": 2,
+        "props": Object {},
+        "simplifiedId": 0,
+        "type": "view",
+      },
+    ],
+    "gojiId": 1,
+    "props": Object {},
+    "type": "GOJI_VIRTUAL_ROOT",
+  },
+}
+`;

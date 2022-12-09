@@ -1,0 +1,29 @@
+{
+  "name": "<%= projectName %>",
+  "description": "A GojiJS App",
+  "version": "0.1.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "jest": "jest --passWithNoTests",
+    "typecheck": "tsc",
+    "start": "goji start",
+    "build": "goji build"
+  },
+  "dependencies": {
+    "@goji/core": "^<%= version %>",
+    "classnames": "^2.2.6",
+    "core-js": "^3.6.5",
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@goji/cli": "^<%= version %>",
+    "@types/classnames": "^2.2.10",
+    "@types/css-modules": "^1.0.0",
+    "@types/react": "^16.9.35",
+    "@types/weixin-app": "^2.9.3",
+    "linaria": "^2.3.0",
+    "typescript": "^4.0.3"
+  }
+}

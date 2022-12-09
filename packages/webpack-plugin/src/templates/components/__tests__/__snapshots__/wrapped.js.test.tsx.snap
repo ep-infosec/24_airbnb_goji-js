@@ -1,0 +1,411 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`wrapped.js process props: attachedInitData 1`] = `
+Array [
+  "internalScale: {
+  value: this.properties.meta.props.scale
+},",
+]
+`;
+
+exports[`wrapped.js process props: data 1`] = `
+Array [
+  "internalScale: {
+  value: 16
+},",
+]
+`;
+
+exports[`wrapped.js process props: properties 1`] = `
+Array [
+  "meta: {
+  type: Object,
+  observer() {
+    var update = {};
+    if (this.properties.meta.props.scale !== this.data.internalScale.value) {
+      update.internalScale = {
+        value: this.properties.meta.props.scale
+      };
+    }
+    if (Object.keys(update)) {
+      this.setData(update);
+    }
+  },
+},",
+]
+`;
+
+exports[`wrapped.js snapshot works: input 1`] = `
+"Component({
+  options: {
+    addGlobalClass: true,
+  },
+  data: {
+    internalValue: {
+      value: \\"\\"
+    },
+    internalFocus: {
+      value: false
+    },
+  },
+  properties: {
+    meta: {
+      type: Object,
+      observer() {
+        var update = {};
+        if (this.properties.meta.props.value !== this.data.internalValue.value) {
+          update.internalValue = {
+            value: this.properties.meta.props.value
+          };
+        }
+        if (this.properties.meta.props.focus !== this.data.internalFocus.value) {
+          update.internalFocus = {
+            value: this.properties.meta.props.focus
+          };
+        }
+        if (Object.keys(update)) {
+          this.setData(update);
+        }
+      },
+    },
+  },
+  lifetimes: {
+    attached() {
+      Object.e.subtreeAttached(this.properties.meta.gojiId, this);
+      this.setData({
+        internalValue: {
+          value: this.properties.meta.props.value
+        },
+        internalFocus: {
+          value: this.properties.meta.props.focus
+        },
+      });
+    },
+    detached() {
+      Object.e.subtreeDetached(this.properties.meta.gojiId);
+    },
+  },
+  methods: {
+    e(evt) {
+      Object.e.trigger(evt);
+    },
+    onInput(evt) {
+      this.data.internalValue.value = evt.detail.value;
+      this.e(evt);
+    },
+  },
+});"
+`;
+
+exports[`wrapped.js snapshot works: map 1`] = `
+"Component({
+  options: {
+    addGlobalClass: true,
+  },
+  data: {
+    internalLongitude: {
+      value: 0
+    },
+    internalLatitude: {
+      value: 0
+    },
+    internalScale: {
+      value: 16
+    },
+  },
+  properties: {
+    meta: {
+      type: Object,
+      observer() {
+        var update = {};
+        if (this.properties.meta.props.longitude !== this.data.internalLongitude.value) {
+          update.internalLongitude = {
+            value: this.properties.meta.props.longitude
+          };
+        }
+        if (this.properties.meta.props.latitude !== this.data.internalLatitude.value) {
+          update.internalLatitude = {
+            value: this.properties.meta.props.latitude
+          };
+        }
+        if (this.properties.meta.props.scale !== this.data.internalScale.value) {
+          update.internalScale = {
+            value: this.properties.meta.props.scale
+          };
+        }
+        if (Object.keys(update)) {
+          this.setData(update);
+        }
+      },
+    },
+  },
+  lifetimes: {
+    attached() {
+      Object.e.subtreeAttached(this.properties.meta.gojiId, this);
+      this.setData({
+        internalLongitude: {
+          value: this.properties.meta.props.longitude
+        },
+        internalLatitude: {
+          value: this.properties.meta.props.latitude
+        },
+        internalScale: {
+          value: this.properties.meta.props.scale
+        },
+      });
+    },
+    detached() {
+      Object.e.subtreeDetached(this.properties.meta.gojiId);
+    },
+  },
+  methods: {
+    e(evt) {
+      Object.e.trigger(evt);
+    },
+    onRegionchange(evt) {
+      evt.type = 'regionchange';
+      this.e(evt);
+    },
+  },
+});"
+`;
+
+exports[`wrapped.js snapshot works: scroll-view 1`] = `
+"Component({
+  options: {
+    addGlobalClass: true,
+  },
+  data: {
+    internalScrollTop: {
+      value: \\"\\"
+    },
+    internalScrollLeft: {
+      value: \\"\\"
+    },
+    internalScrollIntoView: {
+      value: \\"\\"
+    },
+  },
+  properties: {
+    meta: {
+      type: Object,
+      observer() {
+        var update = {};
+        if (this.properties.meta.props.scrollTop !== this.data.internalScrollTop.value) {
+          update.internalScrollTop = {
+            value: this.properties.meta.props.scrollTop
+          };
+        }
+        if (this.properties.meta.props.scrollLeft !== this.data.internalScrollLeft.value) {
+          update.internalScrollLeft = {
+            value: this.properties.meta.props.scrollLeft
+          };
+        }
+        if (this.properties.meta.props.scrollIntoView !== this.data.internalScrollIntoView.value) {
+          update.internalScrollIntoView = {
+            value: this.properties.meta.props.scrollIntoView
+          };
+        }
+        if (Object.keys(update)) {
+          this.setData(update);
+        }
+      },
+    },
+  },
+  lifetimes: {
+    attached() {
+      Object.e.subtreeAttached(this.properties.meta.gojiId, this);
+      this.setData({
+        internalScrollTop: {
+          value: this.properties.meta.props.scrollTop
+        },
+        internalScrollLeft: {
+          value: this.properties.meta.props.scrollLeft
+        },
+        internalScrollIntoView: {
+          value: this.properties.meta.props.scrollIntoView
+        },
+      });
+    },
+    detached() {
+      Object.e.subtreeDetached(this.properties.meta.gojiId);
+    },
+  },
+  methods: {
+    e(evt) {
+      Object.e.trigger(evt);
+    },
+  },
+});"
+`;
+
+exports[`wrapped.js snapshot works: swiper 1`] = `
+"Component({
+  options: {
+    addGlobalClass: true,
+  },
+  data: {
+    internalCurrent: {
+      value: 0
+    },
+  },
+  properties: {
+    meta: {
+      type: Object,
+      observer() {
+        var update = {};
+        if (this.properties.meta.props.current !== this.data.internalCurrent.value) {
+          update.internalCurrent = {
+            value: this.properties.meta.props.current
+          };
+        }
+        if (Object.keys(update)) {
+          this.setData(update);
+        }
+      },
+    },
+  },
+  lifetimes: {
+    attached() {
+      Object.e.subtreeAttached(this.properties.meta.gojiId, this);
+      this.setData({
+        internalCurrent: {
+          value: this.properties.meta.props.current
+        },
+      });
+    },
+    detached() {
+      Object.e.subtreeDetached(this.properties.meta.gojiId);
+    },
+  },
+  methods: {
+    e(evt) {
+      Object.e.trigger(evt);
+    },
+  },
+});"
+`;
+
+exports[`wrapped.js snapshot works: textarea 1`] = `
+"Component({
+  options: {
+    addGlobalClass: true,
+  },
+  data: {
+    internalValue: {
+      value: \\"\\"
+    },
+    internalFocus: {
+      value: false
+    },
+  },
+  properties: {
+    meta: {
+      type: Object,
+      observer() {
+        var update = {};
+        if (this.properties.meta.props.value !== this.data.internalValue.value) {
+          update.internalValue = {
+            value: this.properties.meta.props.value
+          };
+        }
+        if (this.properties.meta.props.focus !== this.data.internalFocus.value) {
+          update.internalFocus = {
+            value: this.properties.meta.props.focus
+          };
+        }
+        if (Object.keys(update)) {
+          this.setData(update);
+        }
+      },
+    },
+  },
+  lifetimes: {
+    attached() {
+      Object.e.subtreeAttached(this.properties.meta.gojiId, this);
+      this.setData({
+        internalValue: {
+          value: this.properties.meta.props.value
+        },
+        internalFocus: {
+          value: this.properties.meta.props.focus
+        },
+      });
+    },
+    detached() {
+      Object.e.subtreeDetached(this.properties.meta.gojiId);
+    },
+  },
+  methods: {
+    e(evt) {
+      Object.e.trigger(evt);
+    },
+    onInput(evt) {
+      this.data.internalValue.value = evt.detail.value;
+      this.e(evt);
+    },
+  },
+});"
+`;
+
+exports[`wrapped.js snapshot works: textarea 2`] = `
+"Component({
+  options: {
+    addGlobalClass: true,
+  },
+  data: {
+    internalValue: {
+      value: \\"\\"
+    },
+    internalFocus: {
+      value: false
+    },
+  },
+  properties: {
+    meta: {
+      type: Object,
+      observer() {
+        var update = {};
+        if (this.properties.meta.props.value !== this.data.internalValue.value) {
+          update.internalValue = {
+            value: this.properties.meta.props.value
+          };
+        }
+        if (this.properties.meta.props.focus !== this.data.internalFocus.value) {
+          update.internalFocus = {
+            value: this.properties.meta.props.focus
+          };
+        }
+        if (Object.keys(update)) {
+          this.setData(update);
+        }
+      },
+    },
+  },
+  lifetimes: {
+    attached() {
+      Object.e.subtreeAttached(this.properties.meta.gojiId, this);
+      this.setData({
+        internalValue: {
+          value: this.properties.meta.props.value
+        },
+        internalFocus: {
+          value: this.properties.meta.props.focus
+        },
+      });
+    },
+    detached() {
+      Object.e.subtreeDetached(this.properties.meta.gojiId);
+    },
+  },
+  methods: {
+    e(evt) {
+      Object.e.trigger(evt);
+    },
+    onInput(evt) {
+      this.data.internalValue.value = evt.detail.value;
+      this.e(evt);
+    },
+  },
+});"
+`;
